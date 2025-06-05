@@ -92,9 +92,8 @@ print('Both scalers are loaded.')
 import itertools
 # 32, 64, 128, 256, 512,
 # 32, 64, 128, 256, 
-list1 = [32, 64, 128, 256, 512, 1024]
-list2 = [32, 64, 128, 256, 512, 1024]
-
+list1 = [128] #, 64, 128, 256, 512, 1024]
+list2 = [256] #, 64, 128, 256, 512, 1024]
 
     
 # lr_list = [0.0001, 0.0003, 0.001, 0.003, 0.01]
@@ -103,7 +102,7 @@ list2 = [32, 64, 128, 256, 512, 1024]
 
 #for i in list1:
 for i, p in itertools.product(list1, list2):
-    layer_1, layer_2, layer_3, layer_4 = i, p, 2048, 0
+    layer_1, layer_2, layer_3, layer_4 = i, p, 128, 0
     lr = 0.001
     m = 32
     n_epoch = 200
