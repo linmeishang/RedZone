@@ -3,7 +3,7 @@
 import pandas as pd
 import glob
 
-all_files = glob.glob(r'N:\agpo\work2\MindStep\WP_4\WP4_Task_4_5\SurrogateABM\DataPreparation\DataPreparationTotal_202411041643\*2024*\*.xlsx', recursive=True)
+all_files = glob.glob(r'N:\agpo\work2\MindStep\WP_4\WP4_Task_4_5\SurrogateABM\DataPreparation\DataPreparationTotal_202506041148\*2025*\*.xlsx', recursive=True)
 
 print(all_files)
 
@@ -24,5 +24,5 @@ for file in all_files:
 print(df)
 #%%
 
-df.to_excel(r'N:\agpo\work2\MindStep\WP_4\WP4_Task_4_5\SurrogateABM\DataPreparation\mlp_results_FarmLin_2024 8.xlsx')
+df.to_excel(r'N:\agpo\work2\MindStep\WP_4\WP4_Task_4_5\SurrogateABM\DataPreparation\mlp_results_FarmLin_2025.xlsx')
 # %%
